@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+<meta charset="UTF-8">
+  
+<title>High Investing Potential Zip Codes</title>
+  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body style="background-color:lightgrey;">
+
+<!-- Navbar starts here -->
+<nav  class="navbar navbar-expand-lg navbar-light bg-light " >
+
+        <a class="navbar-brand"  href="index.html" >Crime Stats & House Values</a>
+        <button class="navbar-toggler  "  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ZipCoverage.html">Nationwide Coverage</a>
+                <a class="dropdown-item" href="CrimeVarsCorr.html">Crime Correlations</a>
+                <a class="dropdown-item" href="NationwideRegression.html">Nationwide Regression</a>
+                <a class="dropdown-item" href="MostPotentialZips.html">Most Potential Zips</a>
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Visualization Comparisons</a>
+                <a class="dropdown-item" href="#">Source Data</a> -->
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+
+
+
+
+
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+<!-- Navbar ends here -->
+<br>
+<br>
+
+<div class="container">
+        
+<div class="row">
+          
+<div class="col-md-8 col-sm-12 my_border">
+  
+
+          
+<div>
+
+<h1>
+10 Zip Codes with Highest Potential Gain in Value
+</h1>
+<hr>
+<br>
+<img style= "padding: 0 15px; float: left" src='MostPotentialZipsBurg.png' width=75%>
+  
+<p>
+        In this final analysis, we identify a few zip codes which we think will be worth more in the future based on burglary risk's relationship with crime rate. Behind the scenes, we ran a simple linear regression of median house price per square foot & burglary risk for each county in the US that we had sufficient data on. This gave us a coefficient for each county. <br><br>
+        Then, we subtracted the zip code's burglary risk from the county's burglary risk to approximate how much that zip code's burglary risk is likely to fall. (For a subsequent, more complete analysis, we would like to look at time-series burglarly risk data to better predict which zip codes can expect their crime to decrease).<br><br>
+        Finally, we multiplied this burglary risk delta with the coefficient of the county-level regression to estimate how much we can expect the zip code's price per square foot to increase. The top 10 zip codes are displayed.</p>
+
+
+</div>
+     
+ 
+</div>
+
+
+<div class="col-md-4 col-sm-12">
+
+<div class="my_border2">
+        <h1 >
+                Visualizations
+        </h1>
+        
+        <hr>
+
+<div class="row">
+
+
+
+
+    <div class="col-md-6 col-sm-6">
+
+        <a href="ZipCoverage.html">
+                <img src='NationWideCountyCoverage.png' alt="Nationwide Zip Code Coverage" width=100%>
+        </a>
+        
+
+    </div>
+
+    <div class="col-md-6 col-sm-6">
+
+        <a href="CrimeVarsCorr.html">
+                <img src='CrimeVarCorrsPsqft.png' alt="Most strongly correlated crime variables" width=100%>
+        </a>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+        <div class="col-md-6 col-sm-6">
+    
+                <a href="NationwideRegression.html">
+                        <img src='NationwideRegressionSQFT.png' alt="Nationwide Regression by Zip Code" width=100%>
+                </a>
+            
+    
+        </div>
+    
+        <div class="col-md-6 col-sm-6">
+    
+                <a href="MostPotentialZips.html">
+                        <img src='MostPotentialZipsBurg.png' alt="Zip Codes with most potential for crime increase" width=100%>
+                </a>
+    
+        </div>
+    
+</div>
+      
+        
+</div>
+</div>   
+</div>
+
+       
+</div>
+
+
+</body>
+
+
+</html>
+

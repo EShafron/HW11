@@ -1,0 +1,88 @@
+h1{
+    font-size: 36px;
+color: cyan;
+text-shadow: 0.25px 0.25px #000000;
+}
+
+h4{
+    text-align: center;
+    font-size: 18px;
+color: cyan;
+text-shadow: 0.25px 0.25px #000000;
+}
+
+.nav_background
+{
+    background:cyan;
+}
+
+.my_border 
+{
+background:white;
+padding: 5px 5px 10px 10px;
+/* margin: 5px 5px; */
+/* width: 600px; */
+/* height: 675px; */
+display: inline;
+}
+
+
+.my_border2
+{
+
+background:white;
+padding: 5px 5px 10px 10px;
+margin: 5px 5px;
+/* width: 650px; */
+/* height: 600px; */
+}
+
+.my_border3
+{
+
+background:white;
+padding: 5px 5px 5px 5px;
+margin: 5px 5px;
+/* width: 650px; */
+/* height: 600px; */
+}
+
+.my_border4
+{
+
+background:white;
+padding: 15px 15px 15px 15px;
+border: 30px 30px 30px 30px;
+margin: 30px 30px 60px 60px;
+/* width: 650px; */
+/* height: 600px; */
+}
+
+
+.top_left
+{
+position: relative;
+
+}
+
+.top_right
+{
+position: relative;
+left: 300px;
+bottom: 150px;	
+}
+
+.bottom_left
+{
+position: relative;
+bottom: 140px;
+
+}
+
+.bottom_right
+{
+position: relative;
+bottom: 350px;
+left: 300px;
+
+}
